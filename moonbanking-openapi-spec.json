@@ -188,9 +188,9 @@
             "required": false,
             "schema": {
               "type": "string",
-              "example": "scores,country"
+              "example": "scores,country,meta"
             },
-            "description": "An optional  comma-separated list of fields to include in the response. Possible values: `scores`, `country`"
+            "description": "An optional  comma-separated list of fields to include in the response. Possible values: `scores`, `country`, `meta`"
           },
           {
             "name": "countryId",
@@ -248,7 +248,7 @@
                             "anyOf": [
                               {
                                 "type": "integer",
-                                "minimum": -9007199254740991,
+                                "minimum": 0,
                                 "maximum": 9007199254740991
                               },
                               {
@@ -262,7 +262,7 @@
                             "anyOf": [
                               {
                                 "type": "integer",
-                                "minimum": -9007199254740991,
+                                "minimum": 0,
                                 "maximum": 9007199254740991
                               },
                               {
@@ -299,7 +299,7 @@
                             "description": "The number of stories for this bank.",
                             "example": 10,
                             "type": "integer",
-                            "minimum": -9007199254740991,
+                            "minimum": 0,
                             "maximum": 9007199254740991
                           },
                           "scores": {
@@ -952,7 +952,7 @@
                           "description": "Number of items per page",
                           "example": 20,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "nextCursor": {
@@ -978,6 +978,19 @@
                               "type": "null"
                             }
                           ]
+                        },
+                        "meta": {
+                          "description": "If meta is included in the include parameter, the meta object will be included in the response.",
+                          "type": "object",
+                          "properties": {
+                            "total": {
+                              "description": "Total count of all items that match the query parameters",
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": ["total"]
                         }
                       },
                       "required": ["hasMore", "limit", "nextCursor"]
@@ -1243,7 +1256,7 @@
                           "anyOf": [
                             {
                               "type": "integer",
-                              "minimum": -9007199254740991,
+                              "minimum": 0,
                               "maximum": 9007199254740991
                             },
                             {
@@ -1257,7 +1270,7 @@
                           "anyOf": [
                             {
                               "type": "integer",
-                              "minimum": -9007199254740991,
+                              "minimum": 0,
                               "maximum": 9007199254740991
                             },
                             {
@@ -1294,7 +1307,7 @@
                           "description": "The number of stories for this bank.",
                           "example": 10,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "scores": {
@@ -2390,7 +2403,7 @@
                           "description": "Number of items per page",
                           "example": 20,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "nextCursor": {
@@ -2416,6 +2429,19 @@
                               "type": "null"
                             }
                           ]
+                        },
+                        "meta": {
+                          "description": "If meta is included in the include parameter, the meta object will be included in the response.",
+                          "type": "object",
+                          "properties": {
+                            "total": {
+                              "description": "Total count of all items that match the query parameters",
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": ["total"]
                         }
                       },
                       "required": ["hasMore", "limit", "nextCursor"]
@@ -2812,7 +2838,7 @@
                             "anyOf": [
                               {
                                 "type": "integer",
-                                "minimum": -9007199254740991,
+                                "minimum": 0,
                                 "maximum": 9007199254740991
                               },
                               {
@@ -2829,14 +2855,14 @@
                             "description": "The number of banks in the country.",
                             "example": 10,
                             "type": "integer",
-                            "minimum": -9007199254740991,
+                            "minimum": 0,
                             "maximum": 9007199254740991
                           },
                           "storiesCount": {
                             "description": "The number of stories for the country.",
                             "example": 10,
                             "type": "integer",
-                            "minimum": -9007199254740991,
+                            "minimum": 0,
                             "maximum": 9007199254740991
                           },
                           "scores": {
@@ -3455,7 +3481,7 @@
                           "description": "Number of items per page",
                           "example": 20,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "nextCursor": {
@@ -3481,6 +3507,19 @@
                               "type": "null"
                             }
                           ]
+                        },
+                        "meta": {
+                          "description": "If meta is included in the include parameter, the meta object will be included in the response.",
+                          "type": "object",
+                          "properties": {
+                            "total": {
+                              "description": "Total count of all items that match the query parameters",
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": ["total"]
                         }
                       },
                       "required": ["hasMore", "limit", "nextCursor"]
@@ -3755,7 +3794,7 @@
                           "anyOf": [
                             {
                               "type": "integer",
-                              "minimum": -9007199254740991,
+                              "minimum": 0,
                               "maximum": 9007199254740991
                             },
                             {
@@ -3772,14 +3811,14 @@
                           "description": "The number of banks in the country.",
                           "example": 10,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "storiesCount": {
                           "description": "The number of stories for the country.",
                           "example": 10,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "scores": {
@@ -4755,7 +4794,7 @@
                             "description": "The number of thumbs up votes for this story.",
                             "example": 10,
                             "type": "integer",
-                            "minimum": -9007199254740991,
+                            "minimum": 0,
                             "maximum": 9007199254740991
                           },
                           "bank": {
@@ -4851,7 +4890,7 @@
                           "description": "Number of items per page",
                           "example": 20,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "nextCursor": {
@@ -4877,6 +4916,19 @@
                               "type": "null"
                             }
                           ]
+                        },
+                        "meta": {
+                          "description": "If meta is included in the include parameter, the meta object will be included in the response.",
+                          "type": "object",
+                          "properties": {
+                            "total": {
+                              "description": "Total count of all items that match the query parameters",
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": ["total"]
                         }
                       },
                       "required": ["hasMore", "limit", "nextCursor"]
@@ -5165,7 +5217,7 @@
                           "description": "The number of thumbs up votes for this story.",
                           "example": 10,
                           "type": "integer",
-                          "minimum": -9007199254740991,
+                          "minimum": 0,
                           "maximum": 9007199254740991
                         },
                         "bank": {
