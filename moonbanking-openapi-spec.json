@@ -1187,6 +1187,12 @@
               }
             }
           }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const banks = await client.banks.list({ ...params });"
+          }
         }
       }
     },
@@ -2133,6 +2139,12 @@
               }
             }
           }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const bank = await client.banks.retrieve('6jkxE4N8gHXgDPK', { ...params });"
+          }
         }
       }
     },
@@ -2637,6 +2649,12 @@
                 }
               }
             }
+          }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const bankVotes = await client.bankVotes.list({ ...params });"
           }
         }
       }
@@ -3716,6 +3734,12 @@
               }
             }
           }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const countries = await client.countries.list({ ...params });"
+          }
         }
       }
     },
@@ -4610,6 +4634,12 @@
               }
             }
           }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const country = await client.countries.retrieve('US', { ...params });"
+          }
         }
       }
     },
@@ -5125,6 +5155,12 @@
               }
             }
           }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const stories = await client.stories.list({ ...params });"
+          }
         }
       }
     },
@@ -5485,6 +5521,12 @@
                 }
               }
             }
+          }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const story = await client.stories.retrieve('lCQ36QJWGDyEZfX', { ...params });"
           }
         }
       }
@@ -6325,6 +6367,12 @@
                 }
               }
             }
+          }
+        },
+        "x-meta": {
+          "isPublic": true,
+          "jsSdk": {
+            "command": "const world = await client.world.retrieve({ ...params });"
           }
         }
       }
