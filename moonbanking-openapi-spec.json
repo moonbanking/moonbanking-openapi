@@ -2123,7 +2123,7 @@
         "x-meta": {
           "isPublic": true,
           "jsSdk": {
-            "command": "const bank = await client.banks.retrieve('6jkxE4N8gHXgDPK', { ...params });"
+            "command": "const bank = await client.banks.get('6jkxE4N8gHXgDPK', { ...params });"
           }
         }
       }
@@ -4618,7 +4618,7 @@
         "x-meta": {
           "isPublic": true,
           "jsSdk": {
-            "command": "const country = await client.countries.retrieve('US', { ...params });"
+            "command": "const country = await client.countries.get('US', { ...params });"
           }
         }
       }
@@ -5506,7 +5506,7 @@
         "x-meta": {
           "isPublic": true,
           "jsSdk": {
-            "command": "const story = await client.stories.retrieve('lCQ36QJWGDyEZfX', { ...params });"
+            "command": "const story = await client.stories.get('lCQ36QJWGDyEZfX', { ...params });"
           }
         }
       }
@@ -6352,7 +6352,7 @@
         "x-meta": {
           "isPublic": true,
           "jsSdk": {
-            "command": "const world = await client.world.retrieve({ ...params });"
+            "command": "const world = await client.world.get({ ...params });"
           }
         }
       }
@@ -8121,7 +8121,7 @@
         "x-meta": {
           "isPublic": true,
           "jsSdk": {
-            "command": "const results = await client.search.get({ q: 'search term', include: 'banks,countries' });"
+            "command": "const results = await client.search.get({ ...params });"
           }
         }
       }
