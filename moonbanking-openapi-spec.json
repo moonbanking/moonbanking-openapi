@@ -44,12 +44,12 @@
             "in": "query",
             "required": true,
             "schema": {
-              "description": "The hostname to search for (e.g., \"chase.com\" or \"www.chase.com\").",
-              "example": "chase.com",
+              "description": "The hostname to search for (e.g., \"fidelity.com\" or \"www.fidelity.com\").",
+              "example": "fidelity.com",
               "type": "string",
               "minLength": 1
             },
-            "description": "The hostname to search for (e.g., \"chase.com\" or \"www.chase.com\")."
+            "description": "The hostname to search for (e.g., \"fidelity.com\" or \"www.fidelity.com\")."
           },
           {
             "name": "include",
@@ -67,7 +67,7 @@
             "required": false,
             "schema": {
               "description": "The title of the web page.",
-              "example": "Chase Bank",
+              "example": "Fidelity Investments",
               "type": "string"
             },
             "description": "The title of the web page."
@@ -990,7 +990,7 @@
         "x-meta": {
           "isPublic": true,
           "jsSdk": {
-            "command": "const banks = await client.banks.getByHostname({ hostname: 'chase.com' });"
+            "command": "const banks = await client.banks.getByHostname({ hostname: 'fidelity.com' });"
           }
         }
       }
